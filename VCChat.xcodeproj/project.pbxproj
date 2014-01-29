@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F2ADBCA188E544C0063FB7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2ADBC9188E544C0063FB7B /* Foundation.framework */; };
+		7F2ADBCC188E544C0063FB7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2ADBCB188E544C0063FB7B /* CoreGraphics.framework */; };
+		7F2ADBCE188E544C0063FB7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2ADBCD188E544C0063FB7B /* UIKit.framework */; };
+		7F2ADBD0188E544C0063FB7B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2ADBCF188E544C0063FB7B /* CoreData.framework */; };
+		7F2ADBD6188E544C0063FB7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F2ADBD4188E544C0063FB7B /* InfoPlist.strings */; };
+		7F2ADBD8188E544C0063FB7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ADBD7188E544C0063FB7B /* main.m */; };
+		7F2ADBDC188E544C0063FB7B /* BaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ADBDB188E544C0063FB7B /* BaseAppDelegate.m */; };
+		7F2ADBDF188E544C0063FB7B /* VCChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ADBDD188E544C0063FB7B /* VCChat.xcdatamodeld */; };
+		7F2ADBE1188E544C0063FB7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2ADBE0188E544C0063FB7B /* Images.xcassets */; };
+		7F2ADBE8188E544C0063FB7B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2ADBE7188E544C0063FB7B /* XCTest.framework */; };
+		7F2ADBE9188E544C0063FB7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2ADBC9188E544C0063FB7B /* Foundation.framework */; };
+		7F2ADBEA188E544C0063FB7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2ADBCD188E544C0063FB7B /* UIKit.framework */; };
+		7F2ADBEB188E544C0063FB7B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2ADBCF188E544C0063FB7B /* CoreData.framework */; };
+		7F2ADC11188E5FE30063FB7B /* VCHeadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ADC0F188E5FE30063FB7B /* VCHeadTableViewController.m */; };
+		7F2ADC12188E5FE30063FB7B /* VCHeadTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2ADC10188E5FE30063FB7B /* VCHeadTableViewController.xib */; };
+		7F2ADC15188E64700063FB7B /* VCCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ADC14188E64700063FB7B /* VCCellInfo.m */; };
+		7F2ADC18188E648E0063FB7B /* VCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ADC17188E648E0063FB7B /* VCTableViewCell.m */; };
+		7F2ADC1A188E64DF0063FB7B /* VCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2ADC19188E64DF0063FB7B /* VCTableViewCell.xib */; };
+		7F4CC04318925FBE00BF1CF5 /* VCChatCellViewHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC04018925FBE00BF1CF5 /* VCChatCellViewHolder.m */; };
+		7F4CC0481892605F00BF1CF5 /* VCChatCellContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC0471892605F00BF1CF5 /* VCChatCellContainer.m */; };
+		7F4CC04A189260B500BF1CF5 /* VCChatCellContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC049189260B500BF1CF5 /* VCChatCellContainer.xib */; };
+		7F4CC04E1892739800BF1CF5 /* avatar-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC04C1892739800BF1CF5 /* avatar-placeholder.png */; };
+		7F789B80189389AE000B50EA /* VCChatBubbleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F789B7F189389AE000B50EA /* VCChatBubbleUtil.m */; };
+		7F789B83189442A9000B50EA /* VCCellTextGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F789B82189442A9000B50EA /* VCCellTextGenerator.m */; };
+		7F789B86189463FB000B50EA /* VCChatCellLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B84189463FB000B50EA /* VCChatCellLeftViewController.xib */; };
+		7F789B87189463FB000B50EA /* VCChatCellRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B85189463FB000B50EA /* VCChatCellRightViewController.xib */; };
+		7F789B8A18946411000B50EA /* bubble-tailless.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B8818946411000B50EA /* bubble-tailless.png */; };
+		7F789B8B18946411000B50EA /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B8918946411000B50EA /* bubble.png */; };
+		7F789B8D1894641B000B50EA /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B8C1894641B000B50EA /* placeholder.png */; };
+		7F789B8F18949CBF000B50EA /* cassette_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B8E18949CBF000B50EA /* cassette_icon&32.png */; };
+		7F789B9118949D3E000B50EA /* pin_map_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B9018949D3E000B50EA /* pin_map_icon&32.png */; };
+		7F789B9318949D56000B50EA /* playback_play_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B9218949D56000B50EA /* playback_play_icon&32.png */; };
+		7F789B9618950DD3000B50EA /* VCContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F789B9518950DD3000B50EA /* VCContactListViewController.m */; };
+		7F789B9918950ED7000B50EA /* VCConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F789B9818950ED7000B50EA /* VCConversationViewController.m */; };
+		7F88A56B188F87B1003E00ED /* VCBaseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A56A188F87B1003E00ED /* VCBaseStore.m */; };
+		7F88A56E188F89A1003E00ED /* VCSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A56D188F89A1003E00ED /* VCSectionInfo.m */; };
+		7F88A571188F8A5D003E00ED /* VCTableInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A570188F8A5D003E00ED /* VCTableInfo.m */; };
+		7F88A575188F8E20003E00ED /* VCBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A573188F8E20003E00ED /* VCBaseTableController.m */; };
+		7F88A576188F8E20003E00ED /* VCBaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F88A574188F8E20003E00ED /* VCBaseTableController.xib */; };
+		7F88A579188F92DA003E00ED /* GenerateTabledata.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A578188F92DA003E00ED /* GenerateTabledata.m */; };
+		7F88A57C188F9C20003E00ED /* VCBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A57B188F9C20003E00ED /* VCBaseCell.m */; };
+		7F88A57E188F9C2D003E00ED /* VCBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F88A57D188F9C2D003E00ED /* VCBaseCell.xib */; };
+		7F88A582188FB6B3003E00ED /* VCChatInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A580188FB6B3003E00ED /* VCChatInputController.m */; };
+		7F88A583188FB6B3003E00ED /* VCChatInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F88A581188FB6B3003E00ED /* VCChatInputController.xib */; };
+		7FB9BBE91898D46D00B71120 /* VCMapVIewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9BBE71898D46D00B71120 /* VCMapVIewViewController.m */; };
+		7FB9BBEA1898D46D00B71120 /* VCMapVIewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FB9BBE81898D46D00B71120 /* VCMapVIewViewController.xib */; };
+		7FB9BBEE1898D49000B71120 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB9BBED1898D49000B71120 /* MapKit.framework */; };
+		7FEA039C1895E1B90044A195 /* VCChatCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA039B1895E1B90044A195 /* VCChatCellInfo.m */; };
+		7FEA03A018960FC20044A195 /* VCChatDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA039F18960FC20044A195 /* VCChatDataSource.m */; };
+		7FEA03A31896100D0044A195 /* VCContactListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03A21896100D0044A195 /* VCContactListDataSource.m */; };
+		7FEA03A618966F9D0044A195 /* VCAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03A518966F9D0044A195 /* VCAudioRecorder.m */; };
+		7FEA03A8189670100044A195 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEA03A7189670100044A195 /* AVFoundation.framework */; };
+		7FEA03B318977C7B0044A195 /* VCOverLay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03AA18977C7B0044A195 /* VCOverLay.m */; };
+		7FEA03B418977C7B0044A195 /* VCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03AC18977C7B0044A195 /* VCImageView.m */; };
+		7FEA03B518977C7B0044A195 /* VCHint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03AE18977C7B0044A195 /* VCHint.m */; };
+		7FEA03B618977C7B0044A195 /* VCLocationFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03B018977C7B0044A195 /* VCLocationFinder.m */; };
+		7FEA03B718977C7B0044A195 /* VCLocationWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03B218977C7B0044A195 /* VCLocationWrapper.m */; };
+		7FEA03BA18978B1B0044A195 /* VCImageCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03B918978B1B0044A195 /* VCImageCellInfo.m */; };
+		7FEA03BD18978C530044A195 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA03BC18978C530044A195 /* UIImage+ImageEffects.m */; };
+		7FFFF39818910BB600CDD4D1 /* VCCustomInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFFF39618910BB600CDD4D1 /* VCCustomInputViewController.m */; };
+		7FFFF39918910BB600CDD4D1 /* VCCustomInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFFF39718910BB600CDD4D1 /* VCCustomInputViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F2ADBEC188E544C0063FB7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F2ADBBE188E544B0063FB7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F2ADBC5188E544B0063FB7B;
+			remoteInfo = VCChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F2ADBC6188E544C0063FB7B /* VCChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2ADBC9188E544C0063FB7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F2ADBCB188E544C0063FB7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F2ADBCD188E544C0063FB7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F2ADBCF188E544C0063FB7B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F2ADBD3188E544C0063FB7B /* VCChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VCChat-Info.plist"; sourceTree = "<group>"; };
+		7F2ADBD5188E544C0063FB7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F2ADBD7188E544C0063FB7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F2ADBD9188E544C0063FB7B /* VCChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VCChat-Prefix.pch"; sourceTree = "<group>"; };
+		7F2ADBDA188E544C0063FB7B /* BaseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAppDelegate.h; sourceTree = "<group>"; };
+		7F2ADBDB188E544C0063FB7B /* BaseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAppDelegate.m; sourceTree = "<group>"; };
+		7F2ADBDE188E544C0063FB7B /* VCChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VCChat.xcdatamodel; sourceTree = "<group>"; };
+		7F2ADBE0188E544C0063FB7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F2ADBE6188E544C0063FB7B /* VCChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2ADBE7188E544C0063FB7B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7F2ADC0E188E5FE30063FB7B /* VCHeadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCHeadTableViewController.h; sourceTree = "<group>"; };
+		7F2ADC0F188E5FE30063FB7B /* VCHeadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCHeadTableViewController.m; sourceTree = "<group>"; };
+		7F2ADC10188E5FE30063FB7B /* VCHeadTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCHeadTableViewController.xib; sourceTree = "<group>"; };
+		7F2ADC13188E64700063FB7B /* VCCellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCellInfo.h; sourceTree = "<group>"; };
+		7F2ADC14188E64700063FB7B /* VCCellInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCellInfo.m; sourceTree = "<group>"; };
+		7F2ADC16188E648E0063FB7B /* VCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableViewCell.h; sourceTree = "<group>"; };
+		7F2ADC17188E648E0063FB7B /* VCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableViewCell.m; sourceTree = "<group>"; };
+		7F2ADC19188E64DF0063FB7B /* VCTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCTableViewCell.xib; sourceTree = "<group>"; };
+		7F4CC03F18925FBE00BF1CF5 /* VCChatCellViewHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatCellViewHolder.h; sourceTree = "<group>"; };
+		7F4CC04018925FBE00BF1CF5 /* VCChatCellViewHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatCellViewHolder.m; sourceTree = "<group>"; };
+		7F4CC0461892605F00BF1CF5 /* VCChatCellContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatCellContainer.h; sourceTree = "<group>"; };
+		7F4CC0471892605F00BF1CF5 /* VCChatCellContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatCellContainer.m; sourceTree = "<group>"; };
+		7F4CC049189260B500BF1CF5 /* VCChatCellContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCChatCellContainer.xib; sourceTree = "<group>"; };
+		7F4CC04C1892739800BF1CF5 /* avatar-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-placeholder.png"; sourceTree = "<group>"; };
+		7F789B7E189389AE000B50EA /* VCChatBubbleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatBubbleUtil.h; sourceTree = "<group>"; };
+		7F789B7F189389AE000B50EA /* VCChatBubbleUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatBubbleUtil.m; sourceTree = "<group>"; };
+		7F789B81189442A9000B50EA /* VCCellTextGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCellTextGenerator.h; sourceTree = "<group>"; };
+		7F789B82189442A9000B50EA /* VCCellTextGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCellTextGenerator.m; sourceTree = "<group>"; };
+		7F789B84189463FB000B50EA /* VCChatCellLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCChatCellLeftViewController.xib; sourceTree = "<group>"; };
+		7F789B85189463FB000B50EA /* VCChatCellRightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCChatCellRightViewController.xib; sourceTree = "<group>"; };
+		7F789B8818946411000B50EA /* bubble-tailless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-tailless.png"; sourceTree = "<group>"; };
+		7F789B8918946411000B50EA /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		7F789B8C1894641B000B50EA /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		7F789B8E18949CBF000B50EA /* cassette_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cassette_icon&32.png"; sourceTree = "<group>"; };
+		7F789B9018949D3E000B50EA /* pin_map_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_map_icon&32.png"; sourceTree = "<group>"; };
+		7F789B9218949D56000B50EA /* playback_play_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playback_play_icon&32.png"; sourceTree = "<group>"; };
+		7F789B9418950DD3000B50EA /* VCContactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCContactListViewController.h; sourceTree = "<group>"; };
+		7F789B9518950DD3000B50EA /* VCContactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCContactListViewController.m; sourceTree = "<group>"; };
+		7F789B9718950ED7000B50EA /* VCConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCConversationViewController.h; sourceTree = "<group>"; };
+		7F789B9818950ED7000B50EA /* VCConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCConversationViewController.m; sourceTree = "<group>"; };
+		7F88A569188F87B1003E00ED /* VCBaseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseStore.h; sourceTree = "<group>"; };
+		7F88A56A188F87B1003E00ED /* VCBaseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseStore.m; sourceTree = "<group>"; };
+		7F88A56C188F89A1003E00ED /* VCSectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSectionInfo.h; sourceTree = "<group>"; };
+		7F88A56D188F89A1003E00ED /* VCSectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSectionInfo.m; sourceTree = "<group>"; };
+		7F88A56F188F8A5D003E00ED /* VCTableInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableInfo.h; sourceTree = "<group>"; };
+		7F88A570188F8A5D003E00ED /* VCTableInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableInfo.m; sourceTree = "<group>"; };
+		7F88A572188F8E20003E00ED /* VCBaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseTableController.h; sourceTree = "<group>"; };
+		7F88A573188F8E20003E00ED /* VCBaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseTableController.m; sourceTree = "<group>"; };
+		7F88A574188F8E20003E00ED /* VCBaseTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCBaseTableController.xib; sourceTree = "<group>"; };
+		7F88A577188F92DA003E00ED /* GenerateTabledata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateTabledata.h; sourceTree = "<group>"; };
+		7F88A578188F92DA003E00ED /* GenerateTabledata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateTabledata.m; sourceTree = "<group>"; };
+		7F88A57A188F9C20003E00ED /* VCBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseCell.h; sourceTree = "<group>"; };
+		7F88A57B188F9C20003E00ED /* VCBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseCell.m; sourceTree = "<group>"; };
+		7F88A57D188F9C2D003E00ED /* VCBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCBaseCell.xib; sourceTree = "<group>"; };
+		7F88A57F188FB6B3003E00ED /* VCChatInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatInputController.h; sourceTree = "<group>"; };
+		7F88A580188FB6B3003E00ED /* VCChatInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatInputController.m; sourceTree = "<group>"; };
+		7F88A581188FB6B3003E00ED /* VCChatInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCChatInputController.xib; sourceTree = "<group>"; };
+		7FB9BBE61898D46D00B71120 /* VCMapVIewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMapVIewViewController.h; sourceTree = "<group>"; };
+		7FB9BBE71898D46D00B71120 /* VCMapVIewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMapVIewViewController.m; sourceTree = "<group>"; };
+		7FB9BBE81898D46D00B71120 /* VCMapVIewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCMapVIewViewController.xib; sourceTree = "<group>"; };
+		7FB9BBED1898D49000B71120 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7FEA039A1895E1B90044A195 /* VCChatCellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatCellInfo.h; sourceTree = "<group>"; };
+		7FEA039B1895E1B90044A195 /* VCChatCellInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatCellInfo.m; sourceTree = "<group>"; };
+		7FEA039D1895E70F0044A195 /* ChatDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDataSource.h; sourceTree = "<group>"; };
+		7FEA039E18960FC20044A195 /* VCChatDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatDataSource.h; sourceTree = "<group>"; };
+		7FEA039F18960FC20044A195 /* VCChatDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatDataSource.m; sourceTree = "<group>"; };
+		7FEA03A11896100D0044A195 /* VCContactListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCContactListDataSource.h; sourceTree = "<group>"; };
+		7FEA03A21896100D0044A195 /* VCContactListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCContactListDataSource.m; sourceTree = "<group>"; };
+		7FEA03A418966F9D0044A195 /* VCAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAudioRecorder.h; sourceTree = "<group>"; };
+		7FEA03A518966F9D0044A195 /* VCAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAudioRecorder.m; sourceTree = "<group>"; };
+		7FEA03A7189670100044A195 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7FEA03A918977C7B0044A195 /* VCOverLay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCOverLay.h; sourceTree = "<group>"; };
+		7FEA03AA18977C7B0044A195 /* VCOverLay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCOverLay.m; sourceTree = "<group>"; };
+		7FEA03AB18977C7B0044A195 /* VCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCImageView.h; sourceTree = "<group>"; };
+		7FEA03AC18977C7B0044A195 /* VCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCImageView.m; sourceTree = "<group>"; };
+		7FEA03AD18977C7B0044A195 /* VCHint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCHint.h; sourceTree = "<group>"; };
+		7FEA03AE18977C7B0044A195 /* VCHint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCHint.m; sourceTree = "<group>"; };
+		7FEA03AF18977C7B0044A195 /* VCLocationFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLocationFinder.h; sourceTree = "<group>"; };
+		7FEA03B018977C7B0044A195 /* VCLocationFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLocationFinder.m; sourceTree = "<group>"; };
+		7FEA03B118977C7B0044A195 /* VCLocationWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLocationWrapper.h; sourceTree = "<group>"; };
+		7FEA03B218977C7B0044A195 /* VCLocationWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLocationWrapper.m; sourceTree = "<group>"; };
+		7FEA03B818978B1B0044A195 /* VCImageCellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCImageCellInfo.h; sourceTree = "<group>"; };
+		7FEA03B918978B1B0044A195 /* VCImageCellInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCImageCellInfo.m; sourceTree = "<group>"; };
+		7FEA03BB18978C530044A195 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		7FEA03BC18978C530044A195 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		7FFFF39518910BB600CDD4D1 /* VCCustomInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCustomInputViewController.h; sourceTree = "<group>"; };
+		7FFFF39618910BB600CDD4D1 /* VCCustomInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCustomInputViewController.m; sourceTree = "<group>"; };
+		7FFFF39718910BB600CDD4D1 /* VCCustomInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCCustomInputViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F2ADBC3188E544B0063FB7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB9BBEE1898D49000B71120 /* MapKit.framework in Frameworks */,
+				7FEA03A8189670100044A195 /* AVFoundation.framework in Frameworks */,
+				7F2ADBCC188E544C0063FB7B /* CoreGraphics.framework in Frameworks */,
+				7F2ADBD0188E544C0063FB7B /* CoreData.framework in Frameworks */,
+				7F2ADBCE188E544C0063FB7B /* UIKit.framework in Frameworks */,
+				7F2ADBCA188E544C0063FB7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2ADBE3188E544C0063FB7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2ADBE8188E544C0063FB7B /* XCTest.framework in Frameworks */,
+				7F2ADBEB188E544C0063FB7B /* CoreData.framework in Frameworks */,
+				7F2ADBEA188E544C0063FB7B /* UIKit.framework in Frameworks */,
+				7F2ADBE9188E544C0063FB7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F2ADBBD188E544B0063FB7B = {
+			isa = PBXGroup;
+			children = (
+				7F2ADBD1188E544C0063FB7B /* VCChat */,
+				7F2ADBC8188E544C0063FB7B /* Frameworks */,
+				7F2ADBC7188E544C0063FB7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F2ADBC7188E544C0063FB7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F2ADBC6188E544C0063FB7B /* VCChat.app */,
+				7F2ADBE6188E544C0063FB7B /* VCChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F2ADBC8188E544C0063FB7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FB9BBED1898D49000B71120 /* MapKit.framework */,
+				7FEA03A7189670100044A195 /* AVFoundation.framework */,
+				7F2ADBC9188E544C0063FB7B /* Foundation.framework */,
+				7F2ADBCB188E544C0063FB7B /* CoreGraphics.framework */,
+				7F2ADBCD188E544C0063FB7B /* UIKit.framework */,
+				7F2ADBCF188E544C0063FB7B /* CoreData.framework */,
+				7F2ADBE7188E544C0063FB7B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F2ADBD1188E544C0063FB7B /* VCChat */ = {
+			isa = PBXGroup;
+			children = (
+				7FB9BBFA1898FCD800B71120 /* resources */,
+				7F2ADBFE188E54600063FB7B /* Class */,
+				7F2ADBDA188E544C0063FB7B /* BaseAppDelegate.h */,
+				7F2ADBDB188E544C0063FB7B /* BaseAppDelegate.m */,
+				7F2ADBE0188E544C0063FB7B /* Images.xcassets */,
+				7F2ADBDD188E544C0063FB7B /* VCChat.xcdatamodeld */,
+				7F2ADBD2188E544C0063FB7B /* Supporting Files */,
+			);
+			path = VCChat;
+			sourceTree = "<group>";
+		};
+		7F2ADBD2188E544C0063FB7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F2ADBD3188E544C0063FB7B /* VCChat-Info.plist */,
+				7F2ADBD4188E544C0063FB7B /* InfoPlist.strings */,
+				7F2ADBD7188E544C0063FB7B /* main.m */,
+				7F2ADBD9188E544C0063FB7B /* VCChat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F2ADBFE188E54600063FB7B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				7F789B7D1893897E000B50EA /* importClasses */,
+				7F4CC03E18925F7F00BF1CF5 /* VCChat */,
+				7F88A568188F8748003E00ED /* VCBase */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		7F4CC03E18925F7F00BF1CF5 /* VCChat */ = {
+			isa = PBXGroup;
+			children = (
+				7FB9BBFC1898FD1000B71120 /* CellDataSource */,
+				7FB9BBFB1898FCFD00B71120 /* Tables */,
+				7FB9BBF91898FC7C00B71120 /* SectionFooter */,
+				7FB9BBF81898FC6C00B71120 /* SectionHeader */,
+				7FB9BBF71898FC5400B71120 /* CellHelper */,
+				7FB9BBF51898FC3900B71120 /* CellLayout */,
+			);
+			name = VCChat;
+			sourceTree = "<group>";
+		};
+		7F789B7D1893897E000B50EA /* importClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7FEA03BB18978C530044A195 /* UIImage+ImageEffects.h */,
+				7FEA03BC18978C530044A195 /* UIImage+ImageEffects.m */,
+				7F789B7E189389AE000B50EA /* VCChatBubbleUtil.h */,
+				7F789B7F189389AE000B50EA /* VCChatBubbleUtil.m */,
+			);
+			name = importClasses;
+			sourceTree = "<group>";
+		};
+		7F88A568188F8748003E00ED /* VCBase */ = {
+			isa = PBXGroup;
+			children = (
+				7F2ADC16188E648E0063FB7B /* VCTableViewCell.h */,
+				7F2ADC17188E648E0063FB7B /* VCTableViewCell.m */,
+				7F2ADC19188E64DF0063FB7B /* VCTableViewCell.xib */,
+				7F88A569188F87B1003E00ED /* VCBaseStore.h */,
+				7F88A56A188F87B1003E00ED /* VCBaseStore.m */,
+				7F2ADC13188E64700063FB7B /* VCCellInfo.h */,
+				7F2ADC14188E64700063FB7B /* VCCellInfo.m */,
+				7F88A56C188F89A1003E00ED /* VCSectionInfo.h */,
+				7F88A56D188F89A1003E00ED /* VCSectionInfo.m */,
+				7F88A56F188F8A5D003E00ED /* VCTableInfo.h */,
+				7F88A570188F8A5D003E00ED /* VCTableInfo.m */,
+				7F88A572188F8E20003E00ED /* VCBaseTableController.h */,
+				7F88A573188F8E20003E00ED /* VCBaseTableController.m */,
+				7F88A574188F8E20003E00ED /* VCBaseTableController.xib */,
+				7F88A577188F92DA003E00ED /* GenerateTabledata.h */,
+				7F88A578188F92DA003E00ED /* GenerateTabledata.m */,
+				7F88A57A188F9C20003E00ED /* VCBaseCell.h */,
+				7F88A57B188F9C20003E00ED /* VCBaseCell.m */,
+				7F88A57D188F9C2D003E00ED /* VCBaseCell.xib */,
+			);
+			name = VCBase;
+			sourceTree = "<group>";
+		};
+		7FB9BBF51898FC3900B71120 /* CellLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7F4CC0461892605F00BF1CF5 /* VCChatCellContainer.h */,
+				7F4CC0471892605F00BF1CF5 /* VCChatCellContainer.m */,
+				7F4CC049189260B500BF1CF5 /* VCChatCellContainer.xib */,
+				7F4CC03F18925FBE00BF1CF5 /* VCChatCellViewHolder.h */,
+				7F4CC04018925FBE00BF1CF5 /* VCChatCellViewHolder.m */,
+				7F789B84189463FB000B50EA /* VCChatCellLeftViewController.xib */,
+				7F789B85189463FB000B50EA /* VCChatCellRightViewController.xib */,
+				7FEA03B818978B1B0044A195 /* VCImageCellInfo.h */,
+				7FEA03B918978B1B0044A195 /* VCImageCellInfo.m */,
+			);
+			name = CellLayout;
+			sourceTree = "<group>";
+		};
+		7FB9BBF71898FC5400B71120 /* CellHelper */ = {
+			isa = PBXGroup;
+			children = (
+				7F789B81189442A9000B50EA /* VCCellTextGenerator.h */,
+				7F789B82189442A9000B50EA /* VCCellTextGenerator.m */,
+				7FEA03A418966F9D0044A195 /* VCAudioRecorder.h */,
+				7FEA03A518966F9D0044A195 /* VCAudioRecorder.m */,
+				7FEA03A918977C7B0044A195 /* VCOverLay.h */,
+				7FEA03AA18977C7B0044A195 /* VCOverLay.m */,
+				7FEA03AB18977C7B0044A195 /* VCImageView.h */,
+				7FEA03AC18977C7B0044A195 /* VCImageView.m */,
+				7FEA03AD18977C7B0044A195 /* VCHint.h */,
+				7FEA03AE18977C7B0044A195 /* VCHint.m */,
+				7FEA03AF18977C7B0044A195 /* VCLocationFinder.h */,
+				7FEA03B018977C7B0044A195 /* VCLocationFinder.m */,
+				7FEA03B118977C7B0044A195 /* VCLocationWrapper.h */,
+				7FEA03B218977C7B0044A195 /* VCLocationWrapper.m */,
+				7FB9BBE61898D46D00B71120 /* VCMapVIewViewController.h */,
+				7FB9BBE71898D46D00B71120 /* VCMapVIewViewController.m */,
+				7FB9BBE81898D46D00B71120 /* VCMapVIewViewController.xib */,
+			);
+			name = CellHelper;
+			sourceTree = "<group>";
+		};
+		7FB9BBF81898FC6C00B71120 /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				7F2ADC0E188E5FE30063FB7B /* VCHeadTableViewController.h */,
+				7F2ADC0F188E5FE30063FB7B /* VCHeadTableViewController.m */,
+				7F2ADC10188E5FE30063FB7B /* VCHeadTableViewController.xib */,
+			);
+			name = SectionHeader;
+			sourceTree = "<group>";
+		};
+		7FB9BBF91898FC7C00B71120 /* SectionFooter */ = {
+			isa = PBXGroup;
+			children = (
+				7F88A57F188FB6B3003E00ED /* VCChatInputController.h */,
+				7F88A580188FB6B3003E00ED /* VCChatInputController.m */,
+				7F88A581188FB6B3003E00ED /* VCChatInputController.xib */,
+				7FFFF39518910BB600CDD4D1 /* VCCustomInputViewController.h */,
+				7FFFF39618910BB600CDD4D1 /* VCCustomInputViewController.m */,
+				7FFFF39718910BB600CDD4D1 /* VCCustomInputViewController.xib */,
+			);
+			name = SectionFooter;
+			sourceTree = "<group>";
+		};
+		7FB9BBFA1898FCD800B71120 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F789B8818946411000B50EA /* bubble-tailless.png */,
+				7F789B8918946411000B50EA /* bubble.png */,
+				7F789B8C1894641B000B50EA /* placeholder.png */,
+				7F4CC04C1892739800BF1CF5 /* avatar-placeholder.png */,
+				7F789B8E18949CBF000B50EA /* cassette_icon&32.png */,
+				7F789B9018949D3E000B50EA /* pin_map_icon&32.png */,
+				7F789B9218949D56000B50EA /* playback_play_icon&32.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		7FB9BBFB1898FCFD00B71120 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				7F789B9418950DD3000B50EA /* VCContactListViewController.h */,
+				7F789B9518950DD3000B50EA /* VCContactListViewController.m */,
+				7F789B9718950ED7000B50EA /* VCConversationViewController.h */,
+				7F789B9818950ED7000B50EA /* VCConversationViewController.m */,
+			);
+			name = Tables;
+			sourceTree = "<group>";
+		};
+		7FB9BBFC1898FD1000B71120 /* CellDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7FEA039D1895E70F0044A195 /* ChatDataSource.h */,
+				7FEA039E18960FC20044A195 /* VCChatDataSource.h */,
+				7FEA039F18960FC20044A195 /* VCChatDataSource.m */,
+				7FEA03A11896100D0044A195 /* VCContactListDataSource.h */,
+				7FEA03A21896100D0044A195 /* VCContactListDataSource.m */,
+				7FEA039A1895E1B90044A195 /* VCChatCellInfo.h */,
+				7FEA039B1895E1B90044A195 /* VCChatCellInfo.m */,
+			);
+			name = CellDataSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F2ADBC5188E544B0063FB7B /* VCChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2ADBF8188E544C0063FB7B /* Build configuration list for PBXNativeTarget "VCChat" */;
+			buildPhases = (
+				7F2ADBC2188E544B0063FB7B /* Sources */,
+				7F2ADBC3188E544B0063FB7B /* Frameworks */,
+				7F2ADBC4188E544B0063FB7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VCChat;
+			productName = VCChat;
+			productReference = 7F2ADBC6188E544C0063FB7B /* VCChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F2ADBE5188E544C0063FB7B /* VCChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2ADBFB188E544C0063FB7B /* Build configuration list for PBXNativeTarget "VCChatTests" */;
+			buildPhases = (
+				7F2ADBE2188E544C0063FB7B /* Sources */,
+				7F2ADBE3188E544C0063FB7B /* Frameworks */,
+				7F2ADBE4188E544C0063FB7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F2ADBED188E544C0063FB7B /* PBXTargetDependency */,
+			);
+			name = VCChatTests;
+			productName = VCChatTests;
+			productReference = 7F2ADBE6188E544C0063FB7B /* VCChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F2ADBBE188E544B0063FB7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Base;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ravenchen;
+				TargetAttributes = {
+					7F2ADBC5188E544B0063FB7B = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					7F2ADBE5188E544C0063FB7B = {
+						TestTargetID = 7F2ADBC5188E544B0063FB7B;
+					};
+				};
+			};
+			buildConfigurationList = 7F2ADBC1188E544B0063FB7B /* Build configuration list for PBXProject "VCChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F2ADBBD188E544B0063FB7B;
+			productRefGroup = 7F2ADBC7188E544C0063FB7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F2ADBC5188E544B0063FB7B /* VCChat */,
+				7F2ADBE5188E544C0063FB7B /* VCChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F2ADBC4188E544B0063FB7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2ADBD6188E544C0063FB7B /* InfoPlist.strings in Resources */,
+				7F88A583188FB6B3003E00ED /* VCChatInputController.xib in Resources */,
+				7F2ADC1A188E64DF0063FB7B /* VCTableViewCell.xib in Resources */,
+				7F789B8A18946411000B50EA /* bubble-tailless.png in Resources */,
+				7F2ADC12188E5FE30063FB7B /* VCHeadTableViewController.xib in Resources */,
+				7F2ADBE1188E544C0063FB7B /* Images.xcassets in Resources */,
+				7F789B8F18949CBF000B50EA /* cassette_icon&32.png in Resources */,
+				7F88A576188F8E20003E00ED /* VCBaseTableController.xib in Resources */,
+				7F4CC04A189260B500BF1CF5 /* VCChatCellContainer.xib in Resources */,
+				7FB9BBEA1898D46D00B71120 /* VCMapVIewViewController.xib in Resources */,
+				7F789B9118949D3E000B50EA /* pin_map_icon&32.png in Resources */,
+				7F789B8D1894641B000B50EA /* placeholder.png in Resources */,
+				7F789B9318949D56000B50EA /* playback_play_icon&32.png in Resources */,
+				7F789B86189463FB000B50EA /* VCChatCellLeftViewController.xib in Resources */,
+				7F789B8B18946411000B50EA /* bubble.png in Resources */,
+				7F789B87189463FB000B50EA /* VCChatCellRightViewController.xib in Resources */,
+				7F88A57E188F9C2D003E00ED /* VCBaseCell.xib in Resources */,
+				7FFFF39918910BB600CDD4D1 /* VCCustomInputViewController.xib in Resources */,
+				7F4CC04E1892739800BF1CF5 /* avatar-placeholder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2ADBE4188E544C0063FB7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F2ADBC2188E544B0063FB7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FEA03BA18978B1B0044A195 /* VCImageCellInfo.m in Sources */,
+				7FEA03A018960FC20044A195 /* VCChatDataSource.m in Sources */,
+				7FEA03B718977C7B0044A195 /* VCLocationWrapper.m in Sources */,
+				7F2ADC11188E5FE30063FB7B /* VCHeadTableViewController.m in Sources */,
+				7F88A571188F8A5D003E00ED /* VCTableInfo.m in Sources */,
+				7F4CC04318925FBE00BF1CF5 /* VCChatCellViewHolder.m in Sources */,
+				7F88A57C188F9C20003E00ED /* VCBaseCell.m in Sources */,
+				7F2ADBD8188E544C0063FB7B /* main.m in Sources */,
+				7FEA03B618977C7B0044A195 /* VCLocationFinder.m in Sources */,
+				7F2ADC18188E648E0063FB7B /* VCTableViewCell.m in Sources */,
+				7F789B80189389AE000B50EA /* VCChatBubbleUtil.m in Sources */,
+				7F789B9918950ED7000B50EA /* VCConversationViewController.m in Sources */,
+				7F2ADC15188E64700063FB7B /* VCCellInfo.m in Sources */,
+				7F88A579188F92DA003E00ED /* GenerateTabledata.m in Sources */,
+				7FEA03A31896100D0044A195 /* VCContactListDataSource.m in Sources */,
+				7FEA03BD18978C530044A195 /* UIImage+ImageEffects.m in Sources */,
+				7FEA03B318977C7B0044A195 /* VCOverLay.m in Sources */,
+				7F88A56E188F89A1003E00ED /* VCSectionInfo.m in Sources */,
+				7F2ADBDC188E544C0063FB7B /* BaseAppDelegate.m in Sources */,
+				7F2ADBDF188E544C0063FB7B /* VCChat.xcdatamodeld in Sources */,
+				7FEA03A618966F9D0044A195 /* VCAudioRecorder.m in Sources */,
+				7F4CC0481892605F00BF1CF5 /* VCChatCellContainer.m in Sources */,
+				7FB9BBE91898D46D00B71120 /* VCMapVIewViewController.m in Sources */,
+				7FEA03B418977C7B0044A195 /* VCImageView.m in Sources */,
+				7FEA039C1895E1B90044A195 /* VCChatCellInfo.m in Sources */,
+				7FFFF39818910BB600CDD4D1 /* VCCustomInputViewController.m in Sources */,
+				7F88A575188F8E20003E00ED /* VCBaseTableController.m in Sources */,
+				7F789B9618950DD3000B50EA /* VCContactListViewController.m in Sources */,
+				7F88A56B188F87B1003E00ED /* VCBaseStore.m in Sources */,
+				7F88A582188FB6B3003E00ED /* VCChatInputController.m in Sources */,
+				7F789B83189442A9000B50EA /* VCCellTextGenerator.m in Sources */,
+				7FEA03B518977C7B0044A195 /* VCHint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2ADBE2188E544C0063FB7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F2ADBED188E544C0063FB7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F2ADBC5188E544B0063FB7B /* VCChat */;
+			targetProxy = 7F2ADBEC188E544C0063FB7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F2ADBD4188E544C0063FB7B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F2ADBD5188E544C0063FB7B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F2ADBF6188E544C0063FB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F2ADBF7188E544C0063FB7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F2ADBF9188E544C0063FB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VCChat/VCChat-Prefix.pch";
+				INFOPLIST_FILE = "VCChat/VCChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F2ADBFA188E544C0063FB7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VCChat/VCChat-Prefix.pch";
+				INFOPLIST_FILE = "VCChat/VCChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F2ADBFC188E544C0063FB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VCChat.app/VCChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VCChat/VCChat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VCChatTests/VCChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7F2ADBFD188E544C0063FB7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VCChat.app/VCChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VCChat/VCChat-Prefix.pch";
+				INFOPLIST_FILE = "VCChatTests/VCChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F2ADBC1188E544B0063FB7B /* Build configuration list for PBXProject "VCChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2ADBF6188E544C0063FB7B /* Debug */,
+				7F2ADBF7188E544C0063FB7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2ADBF8188E544C0063FB7B /* Build configuration list for PBXNativeTarget "VCChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2ADBF9188E544C0063FB7B /* Debug */,
+				7F2ADBFA188E544C0063FB7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2ADBFB188E544C0063FB7B /* Build configuration list for PBXNativeTarget "VCChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2ADBFC188E544C0063FB7B /* Debug */,
+				7F2ADBFD188E544C0063FB7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F2ADBDD188E544C0063FB7B /* VCChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F2ADBDE188E544C0063FB7B /* VCChat.xcdatamodel */,
+			);
+			currentVersion = 7F2ADBDE188E544C0063FB7B /* VCChat.xcdatamodel */;
+			path = VCChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F2ADBBE188E544B0063FB7B /* Project object */;
+}
