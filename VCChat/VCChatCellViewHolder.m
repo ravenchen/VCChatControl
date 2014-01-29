@@ -44,7 +44,7 @@
         [topView removeFromSuperview];
     }
     // restore the msgContainer
-    if([self.nibName isEqualToString:@"ChatCellRightViewController"])
+    if([self.nibName isEqualToString:@"VCChatCellRightViewController"])
     {
         self.originalFrame=CGRectMake(71,0,199,40);
     }
@@ -55,9 +55,10 @@
     [self.msgBg.superview setFrame:self.originalFrame];
     // move the msgBg to right position
     float moveLeft=0;
-    if([self.nibName isEqualToString:@"ChatCellRightViewController"])
+    if([self.nibName isEqualToString:@"VCChatCellRightViewController"])
     {
         moveLeft=(self.msgBg.frame.size.width-self.displayView.frame.size.width);
+        
     }
     else
     {

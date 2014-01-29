@@ -62,7 +62,7 @@
         }
         UIView * textView=view;
         [[self getStore] setValue:textView forKey:@"displayView"];
-        [self setAttributesCellIdentifier:@"VCChatCellControllerCell" Height:[VCChatBubbleUtil getTextViewContainerHeight:textView withTimeBar:[[[self getStore] valueForKey:@"displayTime"] isEqualToString:@"YES"]] Title:Nil subTitle1:nil subTitle2:nil BigIcon:nil  smallIcon:nil];
+        [self setAttributesCellIdentifier:@"VCChatCellContainer" Height:[VCChatBubbleUtil getTextViewContainerHeight:textView withTimeBar:[[[self getStore] valueForKey:@"displayTime"] isEqualToString:@"YES"]] Title:Nil subTitle1:nil subTitle2:nil BigIcon:nil  smallIcon:nil];
     }
     return self;
 }
