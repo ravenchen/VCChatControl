@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>46947FA3-8949-491A-A79D-905238E4DA90</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VCChat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FC221D1F-110F-475D-B95D-0D7F4546DF47</key>
+		<string>https://github.com/ravenchen/VCChatControl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VCChat.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FC221D1F-110F-475D-B95D-0D7F4546DF47</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ravenchen/VCChatControl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FC221D1F-110F-475D-B95D-0D7F4546DF47</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FC221D1F-110F-475D-B95D-0D7F4546DF47</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VCChatControl</string>
+		</dict>
+	</array>
+</dict>
+</plist>

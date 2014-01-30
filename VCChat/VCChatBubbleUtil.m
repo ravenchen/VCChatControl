@@ -15,7 +15,7 @@ static VCChatCellViewHolder * cellController;
 {
     if(!cellView)
     {
-        cellController=[[VCChatCellViewHolder alloc]initWithNibName:@"ChatCellLeftViewController" bundle:nil];
+        cellController=[[VCChatCellViewHolder alloc]initWithNibName:@"VCChatCellLeftViewController" bundle:nil];
         cellView=cellController.view;
     }
     return cellView;
