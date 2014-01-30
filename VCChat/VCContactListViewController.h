@@ -7,7 +7,6 @@
 //
 
 #import "VCBaseTableController.h"
-#import "GenerateTabledata.h"
 @interface VCContactListViewController : VCBaseTableController
 
 @end

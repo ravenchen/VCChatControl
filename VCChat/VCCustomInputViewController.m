@@ -39,6 +39,7 @@ static UIColor * bgColor;
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     [self.tabBar setDelegate:self];
     self.sendRecord=NO;
+   
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -65,6 +66,10 @@ static UIColor * bgColor;
     if(item.tag==2)
     {
         [self sendLocation];
+    }
+    if(item.tag==3)
+    {
+        [self dismissKeyboard:nil];
     }
 }
 -(void) sendLocation
@@ -143,7 +148,6 @@ static UIColor * bgColor;
 }
 -(IBAction)playSound:(UIButton *)sender
 {
-    //NSLog(@"playSound: %@",[sender.layer valueForKey:@"sound"]);
      NSData * data=(NSData *)[sender.layer valueForKey:@"sound"];
     [self.audioRecorder playRecording:data];
 }

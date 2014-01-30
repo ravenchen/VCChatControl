@@ -8,7 +8,6 @@
 
 #import "BaseAppDelegate.h"
 #import "VCCellInfo.h"
-#import "GenerateTabledata.h"
 #import "VCContactListViewController.h"
 #import "VCContactListDataSource.h"
 @implementation BaseAppDelegate

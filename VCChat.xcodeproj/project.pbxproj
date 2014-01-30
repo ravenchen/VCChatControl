@@ -25,10 +25,16 @@
 		7F2ADC15188E64700063FB7B /* VCCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ADC14188E64700063FB7B /* VCCellInfo.m */; };
 		7F2ADC18188E648E0063FB7B /* VCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ADC17188E648E0063FB7B /* VCTableViewCell.m */; };
 		7F2ADC1A188E64DF0063FB7B /* VCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2ADC19188E64DF0063FB7B /* VCTableViewCell.xib */; };
+		7F4C6BCA189A313D002BDB18 /* mic_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C6BC9189A313D002BDB18 /* mic_icon&32.png */; };
 		7F4CC04318925FBE00BF1CF5 /* VCChatCellViewHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC04018925FBE00BF1CF5 /* VCChatCellViewHolder.m */; };
 		7F4CC0481892605F00BF1CF5 /* VCChatCellContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC0471892605F00BF1CF5 /* VCChatCellContainer.m */; };
 		7F4CC04A189260B500BF1CF5 /* VCChatCellContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC049189260B500BF1CF5 /* VCChatCellContainer.xib */; };
 		7F4CC04E1892739800BF1CF5 /* avatar-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC04C1892739800BF1CF5 /* avatar-placeholder.png */; };
+		7F50FC9F189A2DC6002B4BF2 /* photo_icon&24.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F50FC9E189A2DC6002B4BF2 /* photo_icon&24.png */; };
+		7F50FCA3189A2E53002B4BF2 /* pin_map_icon&24.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F50FCA2189A2E53002B4BF2 /* pin_map_icon&24.png */; };
+		7F50FCA5189A2E94002B4BF2 /* 3x3_grid_2_icon&24.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F50FCA4189A2E94002B4BF2 /* 3x3_grid_2_icon&24.png */; };
+		7F50FCA7189A2F09002B4BF2 /* arrow_bottom_icon&24.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F50FCA6189A2F09002B4BF2 /* arrow_bottom_icon&24.png */; };
+		7F50FCA9189A30AF002B4BF2 /* mic_icon&24.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F50FCA8189A30AF002B4BF2 /* mic_icon&24.png */; };
 		7F789B80189389AE000B50EA /* VCChatBubbleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F789B7F189389AE000B50EA /* VCChatBubbleUtil.m */; };
 		7F789B83189442A9000B50EA /* VCCellTextGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F789B82189442A9000B50EA /* VCCellTextGenerator.m */; };
 		7F789B86189463FB000B50EA /* VCChatCellLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B84189463FB000B50EA /* VCChatCellLeftViewController.xib */; };
@@ -37,7 +43,6 @@
 		7F789B8B18946411000B50EA /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B8918946411000B50EA /* bubble.png */; };
 		7F789B8D1894641B000B50EA /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B8C1894641B000B50EA /* placeholder.png */; };
 		7F789B8F18949CBF000B50EA /* cassette_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B8E18949CBF000B50EA /* cassette_icon&32.png */; };
-		7F789B9118949D3E000B50EA /* pin_map_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B9018949D3E000B50EA /* pin_map_icon&32.png */; };
 		7F789B9318949D56000B50EA /* playback_play_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F789B9218949D56000B50EA /* playback_play_icon&32.png */; };
 		7F789B9618950DD3000B50EA /* VCContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F789B9518950DD3000B50EA /* VCContactListViewController.m */; };
 		7F789B9918950ED7000B50EA /* VCConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F789B9818950ED7000B50EA /* VCConversationViewController.m */; };
@@ -46,7 +51,6 @@
 		7F88A571188F8A5D003E00ED /* VCTableInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A570188F8A5D003E00ED /* VCTableInfo.m */; };
 		7F88A575188F8E20003E00ED /* VCBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A573188F8E20003E00ED /* VCBaseTableController.m */; };
 		7F88A576188F8E20003E00ED /* VCBaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F88A574188F8E20003E00ED /* VCBaseTableController.xib */; };
-		7F88A579188F92DA003E00ED /* GenerateTabledata.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A578188F92DA003E00ED /* GenerateTabledata.m */; };
 		7F88A57C188F9C20003E00ED /* VCBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A57B188F9C20003E00ED /* VCBaseCell.m */; };
 		7F88A57E188F9C2D003E00ED /* VCBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F88A57D188F9C2D003E00ED /* VCBaseCell.xib */; };
 		7F88A582188FB6B3003E00ED /* VCChatInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F88A580188FB6B3003E00ED /* VCChatInputController.m */; };
@@ -104,12 +108,18 @@
 		7F2ADC16188E648E0063FB7B /* VCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableViewCell.h; sourceTree = "<group>"; };
 		7F2ADC17188E648E0063FB7B /* VCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableViewCell.m; sourceTree = "<group>"; };
 		7F2ADC19188E64DF0063FB7B /* VCTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCTableViewCell.xib; sourceTree = "<group>"; };
+		7F4C6BC9189A313D002BDB18 /* mic_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mic_icon&32.png"; sourceTree = "<group>"; };
 		7F4CC03F18925FBE00BF1CF5 /* VCChatCellViewHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatCellViewHolder.h; sourceTree = "<group>"; };
 		7F4CC04018925FBE00BF1CF5 /* VCChatCellViewHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatCellViewHolder.m; sourceTree = "<group>"; };
 		7F4CC0461892605F00BF1CF5 /* VCChatCellContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatCellContainer.h; sourceTree = "<group>"; };
 		7F4CC0471892605F00BF1CF5 /* VCChatCellContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatCellContainer.m; sourceTree = "<group>"; };
 		7F4CC049189260B500BF1CF5 /* VCChatCellContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCChatCellContainer.xib; sourceTree = "<group>"; };
 		7F4CC04C1892739800BF1CF5 /* avatar-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-placeholder.png"; sourceTree = "<group>"; };
+		7F50FC9E189A2DC6002B4BF2 /* photo_icon&24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_icon&24.png"; sourceTree = "<group>"; };
+		7F50FCA2189A2E53002B4BF2 /* pin_map_icon&24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_map_icon&24.png"; sourceTree = "<group>"; };
+		7F50FCA4189A2E94002B4BF2 /* 3x3_grid_2_icon&24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3x3_grid_2_icon&24.png"; sourceTree = "<group>"; };
+		7F50FCA6189A2F09002B4BF2 /* arrow_bottom_icon&24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_bottom_icon&24.png"; sourceTree = "<group>"; };
+		7F50FCA8189A30AF002B4BF2 /* mic_icon&24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mic_icon&24.png"; sourceTree = "<group>"; };
 		7F789B7E189389AE000B50EA /* VCChatBubbleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCChatBubbleUtil.h; sourceTree = "<group>"; };
 		7F789B7F189389AE000B50EA /* VCChatBubbleUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCChatBubbleUtil.m; sourceTree = "<group>"; };
 		7F789B81189442A9000B50EA /* VCCellTextGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCellTextGenerator.h; sourceTree = "<group>"; };
@@ -120,7 +130,6 @@
 		7F789B8918946411000B50EA /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
 		7F789B8C1894641B000B50EA /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		7F789B8E18949CBF000B50EA /* cassette_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cassette_icon&32.png"; sourceTree = "<group>"; };
-		7F789B9018949D3E000B50EA /* pin_map_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_map_icon&32.png"; sourceTree = "<group>"; };
 		7F789B9218949D56000B50EA /* playback_play_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playback_play_icon&32.png"; sourceTree = "<group>"; };
 		7F789B9418950DD3000B50EA /* VCContactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCContactListViewController.h; sourceTree = "<group>"; };
 		7F789B9518950DD3000B50EA /* VCContactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCContactListViewController.m; sourceTree = "<group>"; };
@@ -135,8 +144,6 @@
 		7F88A572188F8E20003E00ED /* VCBaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseTableController.h; sourceTree = "<group>"; };
 		7F88A573188F8E20003E00ED /* VCBaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseTableController.m; sourceTree = "<group>"; };
 		7F88A574188F8E20003E00ED /* VCBaseTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCBaseTableController.xib; sourceTree = "<group>"; };
-		7F88A577188F92DA003E00ED /* GenerateTabledata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateTabledata.h; sourceTree = "<group>"; };
-		7F88A578188F92DA003E00ED /* GenerateTabledata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateTabledata.m; sourceTree = "<group>"; };
 		7F88A57A188F9C20003E00ED /* VCBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseCell.h; sourceTree = "<group>"; };
 		7F88A57B188F9C20003E00ED /* VCBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseCell.m; sourceTree = "<group>"; };
 		7F88A57D188F9C2D003E00ED /* VCBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCBaseCell.xib; sourceTree = "<group>"; };
@@ -312,8 +319,6 @@
 				7F88A572188F8E20003E00ED /* VCBaseTableController.h */,
 				7F88A573188F8E20003E00ED /* VCBaseTableController.m */,
 				7F88A574188F8E20003E00ED /* VCBaseTableController.xib */,
-				7F88A577188F92DA003E00ED /* GenerateTabledata.h */,
-				7F88A578188F92DA003E00ED /* GenerateTabledata.m */,
 				7F88A57A188F9C20003E00ED /* VCBaseCell.h */,
 				7F88A57B188F9C20003E00ED /* VCBaseCell.m */,
 				7F88A57D188F9C2D003E00ED /* VCBaseCell.xib */,
@@ -387,12 +392,17 @@
 		7FB9BBFA1898FCD800B71120 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				7F4C6BC9189A313D002BDB18 /* mic_icon&32.png */,
+				7F50FCA8189A30AF002B4BF2 /* mic_icon&24.png */,
+				7F50FCA6189A2F09002B4BF2 /* arrow_bottom_icon&24.png */,
+				7F50FCA4189A2E94002B4BF2 /* 3x3_grid_2_icon&24.png */,
+				7F50FC9E189A2DC6002B4BF2 /* photo_icon&24.png */,
+				7F50FCA2189A2E53002B4BF2 /* pin_map_icon&24.png */,
 				7F789B8818946411000B50EA /* bubble-tailless.png */,
 				7F789B8918946411000B50EA /* bubble.png */,
 				7F789B8C1894641B000B50EA /* placeholder.png */,
 				7F4CC04C1892739800BF1CF5 /* avatar-placeholder.png */,
 				7F789B8E18949CBF000B50EA /* cassette_icon&32.png */,
-				7F789B9018949D3E000B50EA /* pin_map_icon&32.png */,
 				7F789B9218949D56000B50EA /* playback_play_icon&32.png */,
 			);
 			name = resources;
@@ -508,16 +518,19 @@
 			files = (
 				7F2ADBD6188E544C0063FB7B /* InfoPlist.strings in Resources */,
 				7F88A583188FB6B3003E00ED /* VCChatInputController.xib in Resources */,
+				7F50FC9F189A2DC6002B4BF2 /* photo_icon&24.png in Resources */,
 				7F2ADC1A188E64DF0063FB7B /* VCTableViewCell.xib in Resources */,
 				7F789B8A18946411000B50EA /* bubble-tailless.png in Resources */,
 				7F2ADC12188E5FE30063FB7B /* VCHeadTableViewController.xib in Resources */,
 				7F2ADBE1188E544C0063FB7B /* Images.xcassets in Resources */,
+				7F50FCA9189A30AF002B4BF2 /* mic_icon&24.png in Resources */,
 				7F789B8F18949CBF000B50EA /* cassette_icon&32.png in Resources */,
 				7F88A576188F8E20003E00ED /* VCBaseTableController.xib in Resources */,
+				7F50FCA5189A2E94002B4BF2 /* 3x3_grid_2_icon&24.png in Resources */,
 				7F4CC04A189260B500BF1CF5 /* VCChatCellContainer.xib in Resources */,
 				7FB9BBEA1898D46D00B71120 /* VCMapVIewViewController.xib in Resources */,
-				7F789B9118949D3E000B50EA /* pin_map_icon&32.png in Resources */,
 				7F789B8D1894641B000B50EA /* placeholder.png in Resources */,
+				7F50FCA3189A2E53002B4BF2 /* pin_map_icon&24.png in Resources */,
 				7F789B9318949D56000B50EA /* playback_play_icon&32.png in Resources */,
 				7F789B86189463FB000B50EA /* VCChatCellLeftViewController.xib in Resources */,
 				7F789B8B18946411000B50EA /* bubble.png in Resources */,
@@ -525,6 +538,8 @@
 				7F88A57E188F9C2D003E00ED /* VCBaseCell.xib in Resources */,
 				7FFFF39918910BB600CDD4D1 /* VCCustomInputViewController.xib in Resources */,
 				7F4CC04E1892739800BF1CF5 /* avatar-placeholder.png in Resources */,
+				7F4C6BCA189A313D002BDB18 /* mic_icon&32.png in Resources */,
+				7F50FCA7189A2F09002B4BF2 /* arrow_bottom_icon&24.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +570,6 @@
 				7F789B80189389AE000B50EA /* VCChatBubbleUtil.m in Sources */,
 				7F789B9918950ED7000B50EA /* VCConversationViewController.m in Sources */,
 				7F2ADC15188E64700063FB7B /* VCCellInfo.m in Sources */,
-				7F88A579188F92DA003E00ED /* GenerateTabledata.m in Sources */,
 				7FEA03A31896100D0044A195 /* VCContactListDataSource.m in Sources */,
 				7FEA03BD18978C530044A195 /* UIImage+ImageEffects.m in Sources */,
 				7FEA03B318977C7B0044A195 /* VCOverLay.m in Sources */,
